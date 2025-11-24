@@ -28,7 +28,7 @@ app.get("/", (req, res) =>{
     res.send("Servidor funcionando")
 })
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=>{ console.log(`El servidor esta escuchando el puerto ${PORT}`)})
 console.log(process.env.DB_USER);
 
