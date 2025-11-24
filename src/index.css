@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.threads-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Quitar flechas en inputs tipo number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@font-face {
+  font-family: Caveat;
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("./assets/fonts/Caveat/Caveat-VariableFont_wght.ttf") format("woff2");
+}
+
+
+@theme {
+  --color-Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --color-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --color-Grayish-Blue: hsl(212, 23%, 69%);
+  --color-Light-Grayish-Blue: hsl(210, 46%, 95%);
+  --font-Caveat: "Caveat";
+}
