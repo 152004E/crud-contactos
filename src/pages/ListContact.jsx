@@ -12,7 +12,7 @@ export const ListContact = () => {
   const [contactoSeleccionado, setContactoSeleccionado] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:5000/contactos")
+    fetch("https://crud-contactos.onrender.com/contactos")
       .then((res) => res.json())
       .then((data) => setContactos(data))
       .catch((error) => {
@@ -21,7 +21,7 @@ export const ListContact = () => {
   }, []);
 
   const refrescarContactos = () => {
-    fetch("http://localhost:5000/contactos")
+    fetch("https://crud-contactos.onrender.com/contactos")
       .then((res) => res.json())
       .then((data) => setContactos(data))
       .catch((error) => {
@@ -33,7 +33,7 @@ export const ListContact = () => {
     let respuesta = confirm("¿Seguro que deseas eliminar?");
     if (respuesta == true) {
       try {
-        const res = await fetch(`http://localhost:5000/contactos/${id}`, {
+        const res = await fetch(`https://crud-contactos.onrender.com/contactos/${id}`, {
           method: "DELETE",
         });
 

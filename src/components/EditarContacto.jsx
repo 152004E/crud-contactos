@@ -31,7 +31,7 @@ const [telefono, setTelefono] = useState("");
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/contactos/${contactoSeleccionado.id}`, {
+      const res = await fetch(`https://crud-contactos.onrender.com/contactos/${contactoSeleccionado.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

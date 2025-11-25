@@ -26,7 +26,7 @@ export const Registar = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/contactos", {
+      const res = await fetch("https://crud-contactos.onrender.com/contactos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
